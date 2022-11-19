@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const NavBar = () => {
-  const [nav, setNav] = useState(false);
+const NavBar: React.FC = () => {
+  const [nav, setNav] = useState<boolean>(false);
 
   const handleNav = () => {
     setNav((prev) => !prev);
