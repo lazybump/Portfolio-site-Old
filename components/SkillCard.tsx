@@ -6,7 +6,10 @@ interface SkillCardProps {
   imgUrl: string;
 }
 
-const SkillCard = ({ name, imgUrl }: SkillCardProps) => {
+const SkillCard: React.FC<SkillCardProps> = ({
+  name,
+  imgUrl,
+}: SkillCardProps) => {
   return (
     <div className="p-6 duration-300 ease-in shadow-xl rounded-xl hover:scale-110">
       <div className="grid items-center justify-center grid-cols-2 gap-4">
