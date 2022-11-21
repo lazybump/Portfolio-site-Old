@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Shopping Cart",
+    "imgUrl": "/assets/projects/shoppingCart.jpg",
+    "projectUrl": "/shopping-cart"
+  },
+  {
+    "id": 2,
+    "title": "Symphony",
+    "imgUrl": "/assets/projects/symphony.jpg",
+    "projectUrl": "/symphony"
+  }
+]
