@@ -3,13 +3,18 @@ import pic from "../public/assets/projects/shoppingCartBanner.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
+export interface TechnologiesProps {
+  id: number;
+  name: string;
+}
+
 const shoppingCart: React.FC = () => {
-  const technologies = [
-    "React",
-    "TypeScript",
-    "Tailwind",
-    "JavaScript",
-    "Netlify",
+  const technologies: TechnologiesProps[] = [
+    { id: 1, name: "React" },
+    { id: 2, name: "TypeScript" },
+    { id: 3, name: "Tailwind" },
+    { id: 4, name: "JavaScript" },
+    { id: 5, name: "Netlify" },
   ];
 
   return (
@@ -51,8 +56,11 @@ const shoppingCart: React.FC = () => {
             <p className="pb-2 font-bold text-center">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               {technologies.map((tech) => (
-                <p className="flex items-center py-2 text-gray-600">
-                  <RiRadioButtonFill className="pr-1" /> {tech}
+                <p
+                  className="flex items-center py-2 text-gray-600"
+                  key={tech.id}
+                >
+                  <RiRadioButtonFill className="pr-1" /> {tech.name}
                 </p>
               ))}
             </div>

@@ -2,9 +2,15 @@ import Image from "next/image";
 import pic from "../public/assets/projects/symphonyBanner.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import { TechnologiesProps } from "./shoppingCart";
 
 const symphony: React.FC = () => {
-  const technologies = ["React", "CSS", "JavaScript", "Netlify"];
+  const technologies: TechnologiesProps[] = [
+    { id: 1, name: "React" },
+    { id: 2, name: "CSS" },
+    { id: 3, name: "JavaScript" },
+    { id: 5, name: "Netlify" },
+  ];
 
   return (
     <div className="w-full">
@@ -46,8 +52,11 @@ const symphony: React.FC = () => {
             <p className="pb-2 font-bold text-center">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               {technologies.map((tech) => (
-                <p className="flex items-center py-2 text-gray-600">
-                  <RiRadioButtonFill className="pr-1" /> {tech}
+                <p
+                  className="flex items-center py-2 text-gray-600"
+                  key={tech.id}
+                >
+                  <RiRadioButtonFill className="pr-1" /> {tech.name}
                 </p>
               ))}
             </div>
