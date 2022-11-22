@@ -20,6 +20,21 @@ const NavBar: React.FC = () => {
     setNav((prev) => !prev);
   };
 
+  const tabs = [
+    { name: "home", route: "/" },
+    { name: "About", route: "/#about" },
+    { name: "Skills", route: "/#skills" },
+    { name: "Projects", route: "/#projects" },
+    { name: "Contact", route: "/#contact" },
+  ];
+
+  const socials = [
+    <FaLinkedinIn />,
+    <FaGithub />,
+    <AiOutlineMail />,
+    <BsFillPersonLinesFill />,
+  ];
+
   return (
     <div className={`fixed w-full h-20 z-[100] ${shadow ? "shadow-xl" : ""}`}>
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
@@ -33,25 +48,13 @@ const NavBar: React.FC = () => {
         </Link>
         <div>
           <ul className="hidden md:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-            </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Projects
-              </li>
-            </Link>
-            <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Contact
-              </li>
-            </Link>
+            {tabs.map((tab) => (
+              <Link href={tab.route}>
+                <li className="ml-10 text-sm uppercase hover:border-b">
+                  {tab.name}
+                </li>
+              </Link>
+            ))}
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
@@ -96,39 +99,22 @@ const NavBar: React.FC = () => {
           </div>
           <div className="flex flex-col py-4">
             <ul className="uppercase">
-              <Link href="/">
-                <li className="py-4 text-sm">Home</li>
-              </Link>
-              <Link href="/#about">
-                <li className="py-4 text-sm">About</li>
-              </Link>
-              <Link href="/#skills">
-                <li className="py-4 text-sm">Skills</li>
-              </Link>
-              <Link href="/#projects">
-                <li className="py-4 text-sm">Projects</li>
-              </Link>
-              <Link href="/#contact">
-                <li className="py-4 text-sm">Contact</li>
-              </Link>
+              {tabs.map((tab) => (
+                <Link href={tab.route}>
+                  <li className="py-4 text-sm">{tab.name}</li>
+                </Link>
+              ))}
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let's connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <FaLinkedinIn />
-                </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <FaGithub />
-                </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <AiOutlineMail />
-                </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <BsFillPersonLinesFill />
-                </div>
+                {socials.map((icon) => (
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                    {icon}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
