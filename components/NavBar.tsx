@@ -73,12 +73,14 @@ const NavBar: React.FC = () => {
         >
           <div>
             <div className="flex items-center justify-between">
-              <Image
-                src="/../public/assets/navLogo.png"
-                width="35"
-                height="5"
-                alt="/"
-              />
+              <Link href="/">
+                <Image
+                  src="/../public/assets/navLogo.png"
+                  width="35"
+                  height="5"
+                  alt="/"
+                />
+              </Link>
               <div
                 onClick={handleNav}
                 className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
@@ -97,16 +99,16 @@ const NavBar: React.FC = () => {
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
