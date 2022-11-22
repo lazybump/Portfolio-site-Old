@@ -3,11 +3,11 @@
     "id": 1,
     "title": "E-commerce App",
     "imgUrl": "/assets/projects/shoppingCart.jpg",
-    "projectUrl": "/shopping-cart"
+    "projectUrl": "/shoppingCart"
   },
   {
     "id": 2,
-    "title": "Spotify-tracker App",
+    "title": "Spotify-Tracker App",
     "imgUrl": "/assets/projects/symphony.jpg",
     "projectUrl": "/symphony"
   }
