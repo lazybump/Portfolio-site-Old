@@ -101,7 +101,9 @@ const NavBar: React.FC = () => {
             <ul className="uppercase">
               {tabs.map((tab) => (
                 <Link href={tab.route}>
-                  <li className="py-4 text-sm">{tab.name}</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    {tab.name}
+                  </li>
                 </Link>
               ))}
             </ul>
