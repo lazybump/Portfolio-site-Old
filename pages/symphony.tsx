@@ -20,14 +20,26 @@ const symphony: React.FC = () => {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
           <p>Project</p>
-          <h2>Overview</h2>
+          <h2 className="mb-10">Overview</h2>
           <p>
-            This app allows users to log in to their Spotify account, add and
-            remove songs to a custom playlist, and save that playlist into their
-            account.
+            This app allows users to log in to their Spotify account, search for
+            a song/album/artist, add songs, remove songs, create custom
+            playlists, and save them to their account via a .
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <div className="mt-8">
+            <a
+              href="https://symphony-spotify-clone.netlify.app/"
+              className="px-8 py-2 mr-8 uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white"
+            >
+              Demo
+            </a>
+            <a
+              href="https://github.com/lazybump/spotify-clone"
+              className="px-8 py-2 mr-8 uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white"
+            >
+              Code
+            </a>
+          </div>
         </div>
         <div className="col-span-4 p-4 shadow-xl md:col-span-1 shadow-gray-400 rounded-xl">
           <div className="p-2">

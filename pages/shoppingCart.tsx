@@ -25,15 +25,26 @@ const shoppingCart: React.FC = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p>Project</p>
-          <h2>Overview</h2>
+          <h2 className="mb-10">Overview</h2>
           <p>
             This app was built using React JS and is hosted on Netlify. Users
             are able to add and remove items to a shopping cart. They can also
             increase item quantity and see a running total.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <div className="mt-8">
+            <a
+              href="https://shoppingcart-ts-react.netlify.app/"
+              className="px-8 py-2 mr-8 uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white"
+            >
+              Demo
+            </a>
+            <a
+              href="https://github.com/lazybump/Shopping-Cart"
+              className="px-8 py-2 uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white"
+            >
+              Code
+            </a>
+          </div>
         </div>
         <div className="col-span-4 p-4 shadow-xl md:col-span-1 shadow-gray-400 rounded-xl">
           <div className="p-2">
@@ -47,8 +58,8 @@ const shoppingCart: React.FC = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+        <Link href="/#projects" className="text-lg underline">
+          Back
         </Link>
       </div>
     </div>
