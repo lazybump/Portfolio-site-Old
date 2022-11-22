@@ -36,18 +36,18 @@ const NavBar: React.FC = () => {
   };
 
   const tabs = [
-    { name: "home", route: "/" },
-    { name: "About", route: "/#about" },
-    { name: "Skills", route: "/#skills" },
-    { name: "Projects", route: "/#projects" },
-    { name: "Contact", route: "/#contact" },
+    { id: 1, name: "home", route: "/" },
+    { id: 2, name: "About", route: "/#about" },
+    { id: 3, name: "Skills", route: "/#skills" },
+    { id: 4, name: "Projects", route: "/#projects" },
+    { id: 5, name: "Contact", route: "/#contact" },
   ];
 
   const socials = [
-    <FaLinkedinIn />,
-    <FaGithub />,
-    <AiOutlineMail />,
-    <BsFillPersonLinesFill />,
+    { id: 1, icon: <FaLinkedinIn /> },
+    { id: 2, icon: <FaGithub /> },
+    { id: 3, icon: <AiOutlineMail /> },
+    { id: 4, icon: <BsFillPersonLinesFill /> },
   ];
 
   return (
@@ -67,7 +67,7 @@ const NavBar: React.FC = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             {tabs.map((tab) => (
-              <Link href={tab.route}>
+              <Link href={tab.route} key={tab.id}>
                 <li className="ml-10 text-sm uppercase hover:border-b">
                   {tab.name}
                 </li>
@@ -118,7 +118,7 @@ const NavBar: React.FC = () => {
           <div className="flex flex-col py-4">
             <ul className="uppercase">
               {tabs.map((tab) => (
-                <Link href={tab.route}>
+                <Link href={tab.route} key={tab.id}>
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
                     {tab.name}
                   </li>
@@ -130,9 +130,12 @@ const NavBar: React.FC = () => {
                 Let's connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                {socials.map((icon) => (
-                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                    {icon}
+                {socials.map((social) => (
+                  <div
+                    key={social.id}
+                    className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105"
+                  >
+                    {social.icon}
                   </div>
                 ))}
               </div>
