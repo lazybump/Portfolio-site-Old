@@ -4,10 +4,25 @@ import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const NavBar: React.FC = () => {
-  const [nav, setNav] = useState<boolean>(false);
-  const [shadow, setShadow] = useState<boolean>(false);
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath === "/shoppingCart" || router.asPath === "/symphony") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -36,7 +51,10 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <div className={`fixed w-full h-20 z-[100] ${shadow ? "shadow-xl" : ""}`}>
+    <div
+      style={{ backgroundColor: `${navBg}` }}
+      className={`fixed w-full h-20 z-[100] ${shadow ? "shadow-xl" : ""}`}
+    >
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image
@@ -47,7 +65,7 @@ const NavBar: React.FC = () => {
           />
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             {tabs.map((tab) => (
               <Link href={tab.route}>
                 <li className="ml-10 text-sm uppercase hover:border-b">
