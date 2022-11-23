@@ -17,10 +17,10 @@ const About: React.FC = () => {
             Effects to put together AMVs (Anime Music Videos). The constant
             editing, re-editing, running into bugs, etc was admittedly tough but
             the final result as well as the feedback made it all worthwhile in
-            the end. Eventually, I had to end it due to a lack of time but it's
-            that same drive and commitment that has helped me learn to code on
-            my own and hopefully can be translated into my next role as a
-            developer.
+            the end. Eventually, I had to end it due to a lack of time but
+            it&apos;s that same drive and commitment that has helped me learn to
+            code on my own and hopefully can be translated into my next role as
+            a developer.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out some of my latest projects.

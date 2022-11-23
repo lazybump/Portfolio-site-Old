@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-4">What I've Built</h2>
+        <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project) => (
             <ProjectItem key={project.id} {...project} />
