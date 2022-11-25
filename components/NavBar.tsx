@@ -58,9 +58,9 @@ const NavBar: React.FC = () => {
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image
-            src="/../public/assets/navLogo.png"
+            src="/../public/assets/logo.png"
             alt="/"
-            width="40"
+            width="120"
             height="50"
           />
         </Link>
@@ -96,8 +96,8 @@ const NavBar: React.FC = () => {
             <div className="flex items-center justify-between">
               <Link href="/">
                 <Image
-                  src="/../public/assets/navLogo.png"
-                  width="35"
+                  src="/../public/assets/logo.png"
+                  width="120"
                   height="5"
                   alt="/"
                 />
