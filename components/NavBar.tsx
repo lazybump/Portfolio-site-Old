@@ -57,12 +57,7 @@ const NavBar: React.FC = () => {
     >
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image
-            src="/../public/assets/logo.png"
-            alt="/"
-            width="120"
-            height="50"
-          />
+          <Image src="/assets/navbarLogo.png" alt="/" width="120" height="50" />
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
