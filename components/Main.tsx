@@ -21,18 +21,11 @@ const Main: React.FC = () => {
             I&apos;m focused on building responsive front-end web applications
             while learning back-end techonologies.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
             <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
-              <FaLinkedinIn />
-            </div>
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
-              <FaGithub />
-            </div>
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
-              <AiOutlineMail />
-            </div>
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
-              <BsFillPersonLinesFill />
+              <a href="https://github.com/lazybump">
+                <FaGithub />
+              </a>
             </div>
           </div>
         </div>
