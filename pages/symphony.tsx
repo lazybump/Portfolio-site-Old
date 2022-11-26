@@ -35,13 +35,13 @@ const symphony: React.FC = () => {
           <div className="mt-8">
             <a
               href="https://symphony-spotify-clone.netlify.app/"
-              className="px-8 py-2 mr-8 uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white"
+              className="px-8 py-2 mr-8 text-white uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-gradient-before to-gradient-after"
             >
               Demo
             </a>
             <a
               href="https://github.com/lazybump/spotify-clone"
-              className="px-8 py-2 mr-8 uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white"
+              className="px-8 py-2 mr-8 text-white uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-gradient-before to-gradient-after"
             >
               Code
             </a>

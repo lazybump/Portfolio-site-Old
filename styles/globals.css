@@ -11,6 +11,12 @@ html {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }
 
+  :root {
+    --primary-color: #007479;
+    --gradient-before: #007479;
+    --gradient-after: #019ba0;
+  }
+
   h1,
   h2,
   h3,
@@ -33,6 +39,6 @@ html {
   }
 
   button {
-    @apply uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+    @apply text-white uppercase shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-gradient-before to-gradient-after;
   }
 }

@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "primary-color": "var(--primary-color)",
+        "gradient-before": "var(--gradient-before)",
+        "gradient-after": "var(--gradient-after)",
+      },
+    },
   },
   plugins: [],
 };

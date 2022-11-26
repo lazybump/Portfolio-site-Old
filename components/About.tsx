@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <div id="about" className="flex items-center w-full p-2 py-16 md:h-screen">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+          <p className="text-xl tracking-widest uppercase text-primary-color">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
