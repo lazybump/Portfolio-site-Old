@@ -91,7 +91,7 @@ const NavBar: React.FC = () => {
             <div className="flex items-center justify-between">
               <Link href="/">
                 <Image
-                  src="/../public/assets/logo.png"
+                  src="/assets/navbarLogo.png"
                   width="120"
                   height="5"
                   alt="/"

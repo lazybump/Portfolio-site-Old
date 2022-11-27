@@ -28,7 +28,7 @@ const About: React.FC = () => {
         </div>
         <div className="flex items-center justify-center w-full h-auto p-4 m-auto duration-300 ease-in shadow-xl shadow-gray-400 rounded-xl hover:scale-105">
           <Image
-            src="/../public/assets/videoEditing.jpg"
+            src="/assets/videoEditing.jpg"
             alt="/"
             width="800"
             height="10"
