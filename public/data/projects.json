@@ -2,13 +2,13 @@
   {
     "id": 1,
     "title": "E-commerce App",
-    "imgUrl": "/assets/projects/shoppingCart.jpg",
+    "imgUrl": "/assets/projects/shoppingCartImg.jpg",
     "projectUrl": "/shoppingCart"
   },
   {
     "id": 2,
     "title": "Spotify-Tracker App",
-    "imgUrl": "/assets/projects/symphony.jpg",
+    "imgUrl": "/assets/projects/symphonyImg.jpg",
     "projectUrl": "/symphony"
   }
 ]
