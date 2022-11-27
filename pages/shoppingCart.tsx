@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pic from "../public/assets/projects/shoppingCartBanner.jpg";
+import pic from "../public/assets/projects/shoppingCartBannerImg.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 

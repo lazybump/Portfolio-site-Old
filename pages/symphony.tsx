@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pic from "../public/assets/projects/symphonyBanner.jpg";
+import pic from "../public/assets/projects/symphonyBannerImg.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { TechnologiesProps } from "./shoppingCart";
