@@ -31,7 +31,7 @@ const TestimonialItem = ({
       <div className="flex justify-between mb-10">
         <StarRating starNum={stars} />
       </div>
-      <p>"{message}"</p>
+      <p>&apos;{message}&apos;</p>
     </div>
   );
 };
