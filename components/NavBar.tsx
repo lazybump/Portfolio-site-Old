@@ -40,7 +40,8 @@ const NavBar: React.FC = () => {
     { id: 2, name: "About", route: "/#about" },
     { id: 3, name: "Skills", route: "/#skills" },
     { id: 4, name: "Projects", route: "/#projects" },
-    { id: 5, name: "Contact", route: "/#contact" },
+    { id: 5, name: "Testimonials", route: "/#testimonials" },
+    { id: 6, name: "Contact", route: "/#contact" },
   ];
 
   const socials = [
