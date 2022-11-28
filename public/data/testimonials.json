@@ -12,7 +12,7 @@
     "name": "Jeff Bezos",
     "company": "Amazon",
     "imgUrl": "/assets/jeff bezos.jpg",
-    "message": "Ahmed instilled confidence in me to start selling books and told me I'd make it one day. It's a shame we lost contact, but the 'A' in Amazon is actually my way of showing homage to him.",
+    "message": "When everyone else doubted me, Ahmed saw more than a bookstore. He envisioned my success. Where do you think the 'A' in Amazon came from?",
     "stars": 5
   },
   {
@@ -20,7 +20,7 @@
     "name": "Elon Musk",
     "company": "Yours soon",
     "imgUrl": "/assets/elon musk.jpg",
-    "message": "Never met this guy, but I'd probably hire him. Then fire him because why not",
-    "stars": 3
+    "message": "Never met this guy, but I'd probably hire him. Then fire him because why not?",
+    "stars": 2
   }
 ]
