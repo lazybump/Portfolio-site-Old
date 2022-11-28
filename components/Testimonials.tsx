@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <div id="testimonials" className="p-4 my-20">
       <h2 className="py-4">Testimonials</h2>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="flex flex-wrap justify-around">
         {testimonials.map((testimonial) => (
           <TestimonialItem key={testimonial.id} {...testimonial} />
         ))}

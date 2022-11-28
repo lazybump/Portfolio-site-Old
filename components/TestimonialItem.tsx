@@ -17,7 +17,7 @@ const TestimonialItem = ({
   stars,
 }: TestimonialItemProps) => {
   return (
-    <div className="flex flex-col items-center p-6 shadow-xl shadow-gray-400 rounded-xl">
+    <div className="flex flex-col items-center p-6 h-[450px] shadow-xl w-96 shadow-gray-400 rounded-xl">
       <Image
         className="rounded-full"
         src={imgUrl}
