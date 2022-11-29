@@ -1,4 +1,4 @@
-import { AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 
 interface StarRatingProps {
   starNum: number;
@@ -8,7 +8,7 @@ const StarRating = ({ starNum }: StarRatingProps) => {
   let stars = [];
 
   for (let i = 0; i < starNum; i++) {
-    stars.push(<AiOutlineStar key={i} className="text-yellow-400" size={25} />);
+    stars.push(<AiFillStar key={i} className="text-yellow-400" size={25} />);
   }
 
   return <>{stars}</>;
