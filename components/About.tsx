@@ -19,7 +19,7 @@ const About: React.FC = () => {
             the final result as well as the feedback made it all worthwhile in
             the end. Eventually, I had to end it due to a lack of time but
             it&apos;s that same drive and commitment that has helped me learn to
-            code on my own and hopefully can be translated into my next role as
+            build websites and hopefully can be translated into my next role as
             a developer.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
