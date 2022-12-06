@@ -1,5 +1,6 @@
 import Head from "next/head";
 import About from "../components/About";
+import Accordion from "../components/Accordion";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
@@ -39,6 +40,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Testimonials />
+      <Accordion />
       <Contact />
     </div>
   );

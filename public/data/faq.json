@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "question": "Where are you based/Are you willing to re-locate?",
+    "answer": "I'm based in London, and I am open to relocation"
+  },
+  {
+    "id": 2,
+    "question": "What are your salary expectations?",
+    "answer": "It depends on the total comp as well as the culture fit"
+  },
+  {
+    "id": 3,
+    "question": "How do you feel about remote work?",
+    "answer": "I'm indifferent about it. I'd like some flexibility to allow for remote work if need be, but I'm happy to commute too"
+  }
+]
