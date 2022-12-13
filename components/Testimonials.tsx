@@ -3,8 +3,6 @@ import TestimonialItem from "./TestimonialItem";
 
 const Testimonials = () => {
   return (
-    // <div id="skills" className="w-full p-2 lg:h-screen">
-    // <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full"></div>
     <div id="testimonials" className="w-full p-2 my-20">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-primary-color">

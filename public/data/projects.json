@@ -1,12 +1,18 @@
 [
   {
     "id": 1,
+    "title": "Invoice App",
+    "imgUrl": "/assets/projects/invoiceImg.png",
+    "projectUrl": "/invoice"
+  },
+  {
+    "id": 2,
     "title": "E-commerce App",
     "imgUrl": "/assets/projects/shoppingCartImg.jpg",
     "projectUrl": "/shoppingCart"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Spotify-Tracker App",
     "imgUrl": "/assets/projects/symphonyImg.jpg",
     "projectUrl": "/symphony"
