@@ -29,7 +29,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <p className="pt-2 pb-4 text-center text-white">React JS</p>
         <Link href={projectUrl}>
           <p className="p-3 text-lg font-bold text-center text-gray-700 bg-white rounded-lg cursor-pointer">
-            More info
+            Project info
           </p>
         </Link>
       </div>
