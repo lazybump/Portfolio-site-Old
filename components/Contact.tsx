@@ -57,40 +57,53 @@ const Contact: React.FC = () => {
               <form>
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
-                    <label className="py-2 text-sm uppercase">Name</label>
+                    <label htmlFor="name" className="py-2 text-sm uppercase">
+                      Name
+                    </label>
                     <input
+                      id="name"
                       className="flex p-3 border-2 border-gray-300 rounded-lg"
                       type="text"
                     />
                   </div>
 
                   <div className="flex flex-col">
-                    <label className="py-2 text-sm uppercase">
+                    <label htmlFor="number" className="py-2 text-sm uppercase">
                       Phone Number
                     </label>
                     <input
+                      id="number"
                       className="flex p-3 border-2 border-gray-300 rounded-lg"
                       type="text"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="py-2 text-sm uppercase">Email</label>
+                  <label htmlFor="email" className="py-2 text-sm uppercase">
+                    Email
+                  </label>
                   <input
+                    id="email"
                     className="flex p-3 border-2 border-gray-300 rounded-lg"
                     type="email"
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="py-2 text-sm uppercase">Subject</label>
+                  <label htmlFor="subject" className="py-2 text-sm uppercase">
+                    Subject
+                  </label>
                   <input
+                    id="subject"
                     className="flex p-3 border-2 border-gray-300 rounded-lg"
                     type="text"
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="py-2 text-sm uppercase">Message</label>
+                  <label htmlFor="message" className="py-2 text-sm uppercase">
+                    Message
+                  </label>
                   <textarea
+                    id="message"
                     className="p-3 border-2 border-gray-300 rounded-lg"
                     rows={10}
                   ></textarea>
