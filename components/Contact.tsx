@@ -26,11 +26,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h2 className="py-2">Ahmed Nur</h2>
-                <p>Front-End Developer</p>
-                <p className="py-4">
-                  I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk
-                </p>
+                <p>Web Developer</p>
               </div>
               <div>
                 <p className="pt-8 uppercase">Connect With Me</p>
