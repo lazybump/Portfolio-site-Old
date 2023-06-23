@@ -26,26 +26,31 @@
   },
   {
     "id": 6,
+    "name": "Django",
+    "imgUrl": "/assets/skills/django.png"
+  },
+  {
+    "id": 7,
     "name": "Tailwind",
     "imgUrl": "/assets/skills/tailwind.png"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Jest",
     "imgUrl": "/assets/skills/jest.png"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Sass",
     "imgUrl": "/assets/skills/sass.png"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Next",
     "imgUrl": "/assets/skills/next.png"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Git",
     "imgUrl": "/assets/skills/git.png"
   }
