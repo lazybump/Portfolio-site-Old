@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "question": "Where are you based/Are you willing to re-locate?",
-    "answer": "I'm based in London, and I am open to relocation"
+    "question": "What type of websites do you specialise in?",
+    "answer": "I have built a range of different types of websites and I would say ecommerce is my favourite"
   },
   {
     "id": 2,
-    "question": "What are your salary expectations?",
-    "answer": "It depends on the total comp as well as the culture fit"
+    "question": "What technologies do you work with",
+    "answer": "I use React, Typescript, and Tailwind mostly. Django also, if a backend is required"
   },
   {
     "id": 3,
-    "question": "How do you feel about remote work?",
-    "answer": "I'm indifferent about it. I'd like some flexibility to allow for remote work if need be, but I'm happy to commute too"
+    "question": "How much do you charge?",
+    "answer": "It depends on the scope of the project"
   }
 ]
