@@ -14,11 +14,10 @@ const Main: React.FC = () => {
           <h1 className="py-4 text-gray-700">
             Hi, I&apos;m <span className="text-primary-color">Ahmed</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Developer</h1>
+          <h1 className="py-2 text-gray-700">A Web Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I&apos;m a front-end web developer specializing in building
-            exceptional digital experiences. Currently, I&apos;m focused on
-            building responsive and accessible front-end web applications
+            I specialise in building
+            exceptional digital experiences through responsive and accessible design
           </p>
           <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
             <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
