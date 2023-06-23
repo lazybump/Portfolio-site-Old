@@ -1,5 +1,4 @@
 import Head from "next/head";
-import About from "../components/About";
 import Accordion from "../components/Accordion";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
@@ -36,7 +35,6 @@ export default function Home() {
         <meta name="theme-color" content="#007479" />
       </Head>
       <Main />
-      <About />
       <Skills />
       <Projects />
       <Testimonials />
