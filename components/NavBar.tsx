@@ -37,11 +37,10 @@ const NavBar: React.FC = () => {
 
   const tabs = [
     { id: 1, name: "home", route: "/" },
-    { id: 2, name: "About", route: "/#about" },
-    { id: 3, name: "Skills", route: "/#skills" },
-    { id: 4, name: "Projects", route: "/#projects" },
-    { id: 5, name: "Testimonials", route: "/#testimonials" },
-    { id: 6, name: "Contact", route: "/#contact" },
+    { id: 2, name: "Skills", route: "/#skills" },
+    { id: 3, name: "Projects", route: "/#projects" },
+    { id: 4, name: "Testimonials", route: "/#testimonials" },
+    { id: 5, name: "Contact", route: "/#contact" },
   ];
 
   const socials = [
